@@ -24,10 +24,10 @@ pipeline {
                 withSonarQubeEnv('sonarqube') { // Ensure this matches your SonarQube configuration
                     bat """
                         mvn clean verify sonar:sonar \
-                        -Dsonar.projectKey=mavendemo \
-                        -Dsonar.projectName='mavendemo' \
-                        -Dsonar.host.url=http://localhost:9000 \
-                        -Dsonar.token=sqp_446e6c4ecb8c846a5f62f3e2925097bf1d3c15a9
+                          -Dsonar.projectKey=mavenjava \
+                          -Dsonar.projectName='mavenjava' \
+                          -Dsonar.host.url=http://localhost:9000 \
+                          -Dsonar.token=sqp_f39bce72cf6856b4e9cd538400994d21bc7b7360
                     """
                 }
             }
